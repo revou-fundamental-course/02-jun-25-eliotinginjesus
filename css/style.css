@@ -1,7 +1,9 @@
+
 .main-header{
     display: flex;
 justify-content: space-between;
 }
+
 
 .main-logo{
 height: 50px;
@@ -10,7 +12,13 @@ background-image: url(https://picsum.photos/200);
 border-radius: 50%;
 background-size: cover;
 background-position: center;
+display: flex;
 }
+
+nav {
+  display: flex;
+  gap: 10Px;
+ }
 
 nav > a {
   border: 1px solid;
@@ -18,19 +26,62 @@ nav > a {
   color: black;
   text-decoration: none;
   border-radius: 4px;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 section {
     height:500px
 }
 
-.banner-img {
-    height: 350px;
-    background-image: url(https://picsum.photos/750);
-    background-size: cover;
-    background-position: center;
+
+.img-slideshow {
+  width: 800px;
+  height:350px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
+
+.controls {
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
 
 footer {
     text-align: center;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .main-header {
+    flex-direction: column;
+    gap: 10Px;
+    align-items: center; 
+  }
+  
+  nav{
+    width: 100%;
+    flex-direction:column;
+    gap:10px
+
+   }
+
+   .main-logo {
+    background-position: center;
+    scroll-padding-left: 2000px
+    ;
+
+   }
+   
 }

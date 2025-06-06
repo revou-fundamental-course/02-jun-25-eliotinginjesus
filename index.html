@@ -6,6 +6,8 @@
     <title>Portofolio Website -Elio</title>
      <!--css externel-->
     <link rel="stylesheet" href="css\style.css">
+    <script src="JS\script.js"></script>
+
 </head>
 <body>
     <!-- header content -->
@@ -26,7 +28,13 @@
         <section id="home">
             <h1>Hi there, Welcome to my portfolio website!</h1>
             <p>My name is Elioting B.I, and I am a Junior Frontend Developer</p>
-            <div class="banner-img"></div>
+             <img class="img-slideshow" src="https://iili.io/F2XOzjp.png"style="display: block;">
+             <img class="img-slideshow" src="https://source.unsplash.com/random/800x400?landscape&sig=2" style="display: none;">
+             <img class="img-slideshow" src="https://source.unsplash.com/random/800x400?landscape&sig=3" style="display: none;">
+
+    <div class="controls">
+      <button onclick="plusDivs(-1)">Prev</button>
+      <button onclick="plusDivs(1)">Next</button>
         </section>
         <hr/>
         <!-- Our profile -->
