@@ -17,7 +17,3 @@ function showDivs(n) {
 
   slides[slideIndex - 1].style.display = "block";
 }
-// Auto-slide tiap 1 detik
-setInterval(() => {
-  plusDivs(1); // Auto jalan
-}, 1000);
