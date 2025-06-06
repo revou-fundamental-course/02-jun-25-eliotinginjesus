@@ -45,6 +45,8 @@ section {
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   display: none;
+  background-size: cover;
+  object-fit: cover;
 }
 
 .controls {
@@ -58,11 +60,9 @@ button {
   cursor: pointer;
 }
 
-
 footer {
     text-align: center;
 }
-
 
 @media only screen and (max-width: 600px) {
   .main-header {
